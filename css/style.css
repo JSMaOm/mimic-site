@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cairo:600|Open+Sans:400,600');
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -15,6 +19,7 @@ body {
 	box-shadow: 0 0 35px rgba(0,0,0,.1);
 	position: fixed;
 	top: 0;
+	z-index: 100;
 }
 
 #logo {
@@ -241,100 +246,106 @@ body {
 }
 
 /* questions section style */
-.questions-header {
-	font-size: 30px
-}
-
-.questions-category {
-	text-align: right;
-	width: 100%;
-}
-
-.questions-category h2 {
-	margin-bottom: 0;
+.faq h2 {
+	margin-top: 0;
 	font-size: 25px;
 }
 
-.question {
-	border: 1px solid #eee;
+.faq .container {
+	text-align: right;
+}
+
+.accordion {
+	width: 100%;
+	position: relaive;
 	margin-bottom: 15px;
-	font-size: 14px;
 }
 
-.question .click {
-	display: none;
-}
-
-.question label {
+.accordion label {
 	display: block;
-	padding: 15px;
-	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #fafafa;
+	border: 1px solid #eee;
+	font-size: 14px;
 	color: #333;
 	cursor: pointer;
+	position: relative;
 }
 
-.question label .show, 
-.question label .hide {
-	margin-left: 5px;
+.accordion label::after {
+	content: "+";
+	position: absolute;
+	top: 9px;
+	right: 15px;
+	display: block;
+	width: 10px;
+	height: 10px;
 }
 
-.question label .hide {
+.accordion .accordion-content {
+	border: 1px solid #fafafa;
+	border-top: none;
+	overflow: hidden;
+	display: none;
+} 
+
+.accordion p {
+	margin: 15px;
+	font-size: 14px;
+	color: #333;
+}
+
+.accordion input[type="checkbox"] {
+	position: absolute;
 	display: none;
 }
 
-.question .click:checked + label + div {
+.accordion input[type="checkbox"]:checked ~ .accordion-content {
 	display: block;
 }
 
-.question .click:checked + label .show {
-	display: none;
+.accordion input[type="checkbox"]:checked ~ label::after {
+	content: "-";
 }
 
-.question .click:checked + label .hide {
-	display: inline;
-}
-
-.question div {
-	display: none;
-	padding: 15px;
-	border-top: 1px solid #eee;
-
-}
-
-/* footer */
-.footer {
-	background: url(../img/img-4.png), #1c1c1c;
-	background-repeat: no-repeat;
-	background-position: center;
+#main-footer {
+	padding: 100px 0;
 	text-align: center;
-	padding: 70px 0;
-}
-
-.footer h3 {
+	background: #1c1c1c url(../img/img-4.png) center 75% no-repeat;
 	color: #fff;
-	font-size: 20px;
 }
 
-.footer h3::after {
+#main-footer .underline::after {
 	width: 30px;
 }
 
-.footer p, .footer a {
+#main-footer p {
 	color: #bbb;
 	font-size: 14px;
+	margin: 6px 0;
 }
 
-.footer a {
+#main-footer p a {
+	color: #bbb;
 	text-decoration: none;
 }
 
-.bottom {
-	background-color: #131313;
-	padding: 18px 0;
-	text-align: center;
-	font-size: 14px;
-	border-top: 1px solid #fafafa1a;
+#sub-footer {
+	padding: 2px 0;
+	background: #131313;
 	color: #ccc;
+	text-align: center;
+	border-top: 1px solid #323232;
+}
+
+#sub-footer p {
+	padding: 0;
+	font-size: 14px;
+}
+
+#sub-footer p a {
+	color: #bbb;
+	text-decoration: none;
 }
 
 .container {

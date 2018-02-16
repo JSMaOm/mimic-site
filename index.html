@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OMAC</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,19 +24,19 @@
             </div>
             <div id="navbar">
                 <ul>
-                    <li><a href="#">عن المبادرة</a></li>
+                    <li><a href="#about">عن المبادرة</a></li>
                     <li class="dropdown">
-                        <a href="#">اكتشف</a>
+                        <a href="#discover">اكتشف</a>
                         <ul class="dropdown-content">
-                            <li><a href="#">تطوير المواقع الإلكترونية</a></li>
-                            <li><a href="#">مطور تطبيقات أندرويد</a></li>
-                            <li><a href="#">تطوير صفحات المواقع الإلكترونية</a></li>
-                            <li><a href="#">محلل بيانات</a></li>
+                            <li><a href="#back-end">تطوير المواقع الإلكترونية</a></li>
+                            <li><a href="#android">مطور تطبيقات أندرويد</a></li>
+                            <li><a href="#front-end">تطوير صفحات المواقع الإلكترونية</a></li>
+                            <li><a href="#data-alanlysit">محلل بيانات</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">انضم</a></li>
-                    <li><a href="#">الأسئلة الشائعة</a></li>
-                    <li><a href="#">اتصل بنا</a></li>
+                    <li><a href="#join">انضم</a></li>
+                    <li><a href="#questions">الأسئلة الشائعة</a></li>
+                    <li><a href="#contact-us">اتصل بنا</a></li>
                     <li><a href="#">EN</a></li>
                 </ul>
             </div>
@@ -50,7 +51,7 @@
             </div>
         </div>
     </div>
-    <div class="section">
+    <div class="section" id="about">
         <div class="container">
             <h2 class="underline">عن المبادرة</h2>
             <div><img src="img/img-2.png" alt=""></div>
@@ -59,7 +60,7 @@
     تهدف مبادرة ’مليون مبرمج عربي‘ إلى تزويد الشباب العربي بالقدرات والمهارات الأساسية التي سيحتاجونها في الحصول على فرص عمل في المستقبل، فتزودهم بلغة العصر – لغة البرمجة – من خلال دورات تدريبية عبر الأنترنت، ويتكون البرنامج التدريبي من أربعة مسارات هي الأكثر طلباً في مجال تطوير المواقع الإلكترونية، وهي: تطوير المواقع الإلكترونية الكاملة، تطوير صفحات المواقع الإلكترونية، تحليل البيانات، و تطوير تطبيقات الأندرويد.</p>
         </div>
     </div>
-    <div class="section">
+    <div class="section" id="info">
         <div class="container">
             <h2 class="underline">معلومات للمدربين والطلاب خاصة بالمجموعة الاولى</h2>
             <div class="info-list">
@@ -73,11 +74,11 @@
             </div>
         </div>
     </div>
-    <div class="section">
+    <div class="section" id="discover">
         
         <h2 class="underline">اكتشف المجالات المختلفة</h2>
         <!-- first track start -->
-        <div class="track">
+        <div class="track" id="back-end">
             <div class="container">
                 <div class="track-desc">
                     <iframe src="https://www.youtube.com/embed/0mRWmsInZmE" allowfullscreen></iframe>
@@ -93,7 +94,7 @@
         <!-- first track end -->
 
         <!-- second track start -->
-        <div class="track">
+        <div class="track" id="android">
             <div class="container">
                 <div class="track-desc">
                     <iframe src="https://www.youtube.com/embed/6WQpTwXh-6k" allowfullscreen></iframe>
@@ -108,7 +109,7 @@
         <!-- second track end -->
 
         <!-- third track start -->
-        <div class="track">
+        <div class="track" id="front-end">
             <div class="container">
                 <div class="track-desc">
                     <iframe src="https://www.youtube.com/embed/yR_VhRa_-cU" allowfullscreen></iframe>
@@ -122,7 +123,7 @@
         </div>
         <!-- third track end -->
         <!-- fourth track start -->
-        <div class="track">
+        <div class="track" id="data-alanlysit">
             <div class="container">
                 <div class="track-desc">
                     <iframe src="https://www.youtube.com/embed/ocTXcTx05kw" allowfullscreen></iframe>
@@ -138,41 +139,47 @@
         <!-- fourth track end -->
     </div>
 
-    <div class="section">
+    <div class="section faq" id="questions">
         <h2 class="underline questions-header">الاسئلة الشائعة</h2>
-        <div class="questions-category">
             <div class="container">
                 <h2>أسئلة متعلقة بالدورة الأولى</h2>
-                <div class="question">
-                    <input type="checkbox" id="click1" class="click">
-                    <label for="click1"><span class="show">+</span><span class="hide">-</span>لقد تم قبولي في أكثر من مسار ، ما الذي يجب علي فعله ؟</label>
-                    <div>برجاء اختيار مسار واحد فقط من المسارات التي تناسبك.</div>
-                </div>
-                <div class="question">
-                    <input type="checkbox" id="click2" class="click">
-                    <label for="click2"><span class="show">+</span><span class="hide">-</span>كيف اقوم بتغيير اللغة الى العربية في تطبيق Udacity على الموبايل ؟</label>
-                    <div>
-                        للاسف، ليس لدينا نسخة عربية لتطبيقات الهاتف/ الموبايل ، لذلك نحن ننصحك بالعودة لموقع المبادرة (الويب).
+                <div class="accordion">
+                    <input type="checkbox" id="faq-1" class="click">
+                    <label for="faq-1">لقد تم قبولي في أكثر من مسار ، ما الذي يجب علي فعله ؟</label>    
+                    <div class="accordion-content">
+                        <p>برجاء اختيار مسار واحد فقط من المسارات التي تناسبك.</p>
                     </div>
                 </div>
-                <div class="question">
-                    <input type="checkbox" id="click3" class="click">
-                    <label for="click3"><span class="show">+</span><span class="hide">-</span>لقد تم قبولي في مسار لم اقم بالتقديم اليه ؟</label>
-                    <div>لقد قمنا بتفقد قاعدة بياناتك و وجدنا انك قد قمت بالتقديم في اكثر من مسار، ما عليك فعله هو تجاهل هذه المجموعة إذا كنت لا تريد اتخاذ هذا المسار، والتأكد من ملئ طلب التحاق خاص بمسار واحد في المجموعات القادمة.</div>
+                <div class="accordion">	
+                    <input id="faq-2" type="checkbox">
+                    <label for="faq-2" class="a">كيف اقوم بتغيير اللغة الى العربية في تطبيق Udacity على الموبايل ؟</label>
+                    <div class="accordion-content">
+                                <p>للاسف، ليس لدينا نسخة عربية لتطبيقات الهاتف/ الموبايل ، لذلك نحن ننصحك بالعودة لموقع المبادرة ( الويب).</p>
+                            </div>
                 </div>
             </div>    
         </div>
     </div>
 
-    <div class="footer">
-        <h3 class="underline questions-header">اتصل بنا</h3>
-        <p>شكرا لإهتمامكم بمبادرة المليون مبرمج عربي.</p>
-        <p>في إطار تزويدكم بكل المعلومات المهمة، لقد جمعنا كل الأسئلة التي ممكن أن تطرح: </p>
-        <p><a href="#">الرجاء الضغط هنا للمتابعة</a></p>
-        <p>لكل الأسئلة الأخرى يمكنكم إرسال بريد إلكتروني إلى <a href="mailto:1mArabCoders@udacity.com">1mArabCoders@udacity.com</a></p>
-    </div>
-    <div class="bottom">
-        حقوق النشر 2017. جميع الحقوق محفوظة من قبل Udacity
+    <div class="footer" id="contact-us">
+        <div id="main-footer">
+            <div class="container">
+                <h3 class="underline">إتصل بنا</h3>
+                <div><img src="img/icon.png" alt=""></div>
+                <p>شكرا لإهتمامكم بمبادرة المليون مبرمج عربي.</p>
+		 	     <p>في إطار تزويدكم بكل المعلومات المهمة، لقد جمعنا كل الأسئلة التي ممكن أن تطرح: 
+                 <br>
+				 <a href="#">الرجاء الضغط هنا للمتابعة</a>
+				 </p>
+			
+			  	 <p>لكل الأسئلة الأخرى يمكنكم إرسال بريد إلكتروني إلى
+				 <a href="mailto:mailto:1mArabCoders@udacity.com">1mArabCoders@udacity.com</a>
+			     </p>
+            </div>
+        </div>
+        <div id="sub-footer">
+            <p>حقوق النشر 2017. جميع الحقوق محفوظة من قبل <a href="#">Udacity</a></p>
+        </div>
     </div>
 </body>
 </html>
